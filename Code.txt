@@ -1,0 +1,30 @@
+#include <stdio.h>
+int ropecut(int n, int a, int b, int c)
+{
+    if (n%a==0 || n%b==0 || n%c==0)
+      return ;
+    else
+    {
+      n=n-a;
+      if (n%b!=0 || n%c!=0)
+      {
+        n=n-b;
+        if (n%a!=0 || n%c!=0)
+        {
+          n=n-c;
+          if (n%a!=0 || n%b!=0)
+          {
+              
+          }
+        }
+      }
+    }
+}
+int main()
+{
+    int n,a,b,c;
+    int ans;
+    scanf("%d %d %d %d",&n,&a,&b,&c);
+    printf("%d",ans);
+    return 0;
+}
